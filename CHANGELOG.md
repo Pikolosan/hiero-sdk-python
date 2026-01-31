@@ -136,7 +136,6 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - Added comprehensive docstring to `compress_with_cryptography` function (#1626)
 
 ### Changed
-- Hardened PR changelog check script by enabling strict Bash mode. (#1492)
 - Added missing type hints to sign method in Transaction class (#1630)
 - Refactored `examples/consensus/topic_create_transaction.py` to use `Client.from_env()` (#1611)
 - Updated GitHub Actions setup-node action to v6.2.0.
@@ -227,6 +226,7 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - chore: update merge conflict bot message with web editor tips (#1592)
 
 ### Fixed
+- Correct PR changelog validation logic and harden script with strict Bash mode to prevent false positives and missed entries (#1492)
 - Fix the next-issue recommendation bot to post the correct issue recommendation comment. (#1593)
 - Ensured that the GFI assignment bot skips posting `/assign` reminders for repository collaborators to avoid unnecessary notifications.(#1568).
 - Reduced notification spam by skipping the entire advanced qualification job for non-advanced issues and irrelevant events (#1517)
